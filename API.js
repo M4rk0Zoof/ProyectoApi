@@ -11,3 +11,14 @@ async function Arianna(){
 }
 
 Arianna();
+
+objetos = [
+    {url:"https://api.disneyapi.dev/character/308",
+    color:"rojo",
+    descripcion:"Una reina"
+    },
+    {url:"https://api.disneyapi.dev/character/307",
+    color:"azul",
+    descripcion:"No sé"
+    }
+]
