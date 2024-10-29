@@ -21,7 +21,7 @@ objetos = [
     color:"azul",
     descripcion:"No sé"
     },
-    {url:"https://api.disneyapi.dev/character/7",
+    {url:"https://api.disneyapi.dev/character/10",
     color:"azul",
     descripcion:"No sé"
     }
