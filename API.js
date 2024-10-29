@@ -13,11 +13,15 @@ async function Arianna(){
 Arianna();
 
 objetos = [
-    {url:"https://api.disneyapi.dev/character/308",
-    color:"rojo",
-    descripcion:"Una reina"
+    {url:"https://api.disneyapi.dev/character/6",
+    color:"verde",
+    descripcion:"Una tortuga"
     },
-    {url:"https://api.disneyapi.dev/character/307",
+    {url:"https://api.disneyapi.dev/character/7",
+    color:"azul",
+    descripcion:"No sé"
+    },
+    {url:"https://api.disneyapi.dev/character/7",
     color:"azul",
     descripcion:"No sé"
     }
