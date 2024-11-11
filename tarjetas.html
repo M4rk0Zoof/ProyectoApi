@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Tarjetas lado izquierdo -->
-    <div class="contenedor-izquierda">
+    <div class="contenedor-izquierda" id="contenedor-izquierda">
         <div class="tarjeta">
             <div class="foto" id="fotinha"></div>
             <div class="nombre" id="nombre"></div>
@@ -24,12 +24,6 @@
             <div class="foto"></div>
             <div class="nombre">Nombre 3</div>
             <div class="descripcion">Descripción de la persona 3.</div>
-        </div>
-
-        <div class="tarjeta">
-            <div class="foto"></div>
-            <div class="nombre">Nombre 5</div>
-            <div class="descripcion">Descripción de la persona 5.</div>
         </div>
     </div>
 
@@ -45,12 +39,6 @@
             <div class="foto"></div>
             <div class="nombre">Nombre 4</div>
             <div class="descripcion">Descripción de la persona 4.</div>
-        </div>
-
-        <div class="tarjeta">
-            <div class="foto"></div>
-            <div class="nombre">Nombre 6</div>
-            <div class="descripcion">Descripción de la persona 6.</div>
         </div>
     </div>
     <script>
@@ -73,6 +61,28 @@
         document.getElementById("nombre").appendChild(node);
         document.getElementById("descripzinha").appendChild(descrip);
         document.getElementById("fotinha").appendChild(fota);
+
+        function tarjeta(){
+            const dividid = document.getElementById('contenedor-izquierda');
+            const tarje = document.createElement("div");
+            tarje.className = "tarjeta";
+            dividid.appendChild(tarje);
+            const foto = document.createElement("img");
+            foto.className = "foto";
+            tarje.appendChild(foto);
+            const nome = document.createElement("p");
+            nome.className = "nombre";
+            const nomee = document.createTextNode("Nombre del personaje.");
+            nome.appendChild(nomee);
+            tarje.appendChild(nome);
+            const descri = document.createElement("p");
+            descri.className = "descripcion";
+            const descrii = document.createTextNode("Descripción.");
+            descri.appendChild(descrii);
+            tarje.appendChild(descri);
+        }
+        tarjeta();
+        tarjeta();
     </script>
 </body>
 </html>
