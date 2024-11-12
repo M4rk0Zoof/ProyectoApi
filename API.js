@@ -51,3 +51,23 @@ function personaje(){
     document.getElementById("descripzinha").appendChild(descrip);
     document.getElementById("fotinha").appendChild(fota);
 }
+
+function tarjeta(){
+    const dividid = document.getElementById('contenedor-izquierda');
+    const tarje = document.createElement("div");
+    tarje.className = "tarjeta";
+    dividid.appendChild(tarje);
+    const foto = document.createElement("img");
+    foto.className = "foto";
+    tarje.appendChild(foto);
+    const nome = document.createElement("p");
+    nome.className = "nombre";
+    const nomee = document.createTextNode("Nombre del personaje.");
+    nome.appendChild(nomee);
+    tarje.appendChild(nome);
+    const descri = document.createElement("p");
+    descri.className = "descripcion";
+    const descrii = document.createTextNode("Descripción.");
+    descri.appendChild(descrii);
+    tarje.appendChild(descri);
+}
